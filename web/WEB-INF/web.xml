@@ -12,6 +12,8 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
+
+    <!--Simple HTTP Java servlet config-->
     <servlet>
         <servlet-name>testwebservice</servlet-name>
         <servlet-class>com.rule.webservice.java.TestServlet</servlet-class>
@@ -21,4 +23,20 @@
         <servlet-name>testwebservice</servlet-name>
         <url-pattern>/testwebservice</url-pattern>
     </servlet-mapping>
+
+    <!--Jersey REST WebService config-->
+    <servlet>
+        <servlet-name>jersey</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+        <init-param>
+            <param-name>com.sun.jersey.config.property.packages</param-name>
+            <param-value>com.rule.webservice.java</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>jersey</servlet-name>
+        <url-pattern>/jersey/*</url-pattern>
+    </servlet-mapping>
+
 </web-app>
