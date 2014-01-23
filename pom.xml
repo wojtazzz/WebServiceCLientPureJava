@@ -60,6 +60,22 @@
             <version>1.18</version>
         </dependency>
 
+
+        <!--Tests-->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>6.8.7</version>
+        </dependency>
+
+        <!--Microsoft Translation API wrapper-->
+        <dependency>
+            <groupId>com.memetix</groupId>
+            <artifactId>microsoft-translator-java-api</artifactId>
+            <version>0.6.2</version>
+            <type>jar</type>
+        </dependency>
+
     </dependencies>
 
 

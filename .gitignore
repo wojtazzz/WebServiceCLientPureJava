@@ -11,3 +11,6 @@
 # Maven
 log/
 target/
+
+# secretstuff
+secret.properties
